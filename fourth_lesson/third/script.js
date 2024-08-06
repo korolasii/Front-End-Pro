@@ -1,8 +1,8 @@
 let userYearOfBirth = prompt("Your year of birth: ");
-currentYear = new Date().getFullYear(),
-userAge = userYearOfBirth !== null && userYearOfBirth.trim() !== "" ? currentYear - userYearOfBirth : null,
-userFavoriteSport = prompt("Your favorite sport: "),
-userCity = prompt("Your name of city: ");
+let currentYear = new Date().getFullYear();
+let userAge = userYearOfBirth !== null && userYearOfBirth.trim() !== "" ? currentYear - userYearOfBirth : null;
+let userFavoriteSport = prompt("Your favorite sport: ");
+let userCity = prompt("Your name of city: ");
 
 if (userYearOfBirth === null) {
     alert("Шкода, що Ви не захотіли ввести свою дату народження.");
