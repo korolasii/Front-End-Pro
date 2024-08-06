@@ -1,4 +1,4 @@
-let userYearOfBirth = prompt("Your year of birth: ");
+let userYearOfBirth = prompt("Your year of birth: "),
 currentYear = new Date().getFullYear(),
 userAge = userYearOfBirth !== null && userYearOfBirth.trim() !== "" ? currentYear - userYearOfBirth : null,
 userFavoriteSport = prompt("Your favorite sport: "),
