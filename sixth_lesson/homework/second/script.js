@@ -1,5 +1,5 @@
 function average(array = []){
-    let sum = 0;1, 2
+    let sum = 0;
     let count = 0;
     let averageArray = 0;
     for (let i = 0; i < array.length; i++) {
