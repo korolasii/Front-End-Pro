@@ -4,8 +4,8 @@ function askForNumber() {
     for (let i = 0; i < 10; i++) {
         userInput = prompt("Enter a number greater than 100:");
 
-        if (userInput > 100) {
-            console.log("Last entered number:", userInput);
+        if (userInput > 100 || isNaN(Number(parseInt(userInput))))  {
+            console.log("Last input:", userInput);
             return;
         }
 
