@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+.page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formDiv{
+    border-radius: 20px;
+    background-color: #f5f5fa;
+    width: 435px;
+    height: 515px;
+    padding: 20px 30px;
+}
+
+.labelFom{
+    font-size: 30px;
+    color: #f03565;
+    font-weight: bolder;
+}
+
+textarea, input{
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 2px 5px;
+    height: 70px;
+}
+
+input{
+    height: 30px;
+}
+
+.answerHow{
+    color: #b6b6bd;
+}
+
+#btn{
+    background-color: #24a3ff;
+    height: 70px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
