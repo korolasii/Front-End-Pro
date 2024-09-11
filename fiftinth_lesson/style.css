@@ -24,8 +24,11 @@
     font-weight: bolder;
 }
 
+.errorInput{
+    border: 1px solid red;
+}
+
 textarea, input{
-    margin-bottom: 15px;
     width: 100%;
     border-radius: 10px;
     border: none;
@@ -50,4 +53,5 @@ input{
     color: red;
     font-size: 14px;
     margin-top: 5px;
+    margin-bottom: 15px;
 }
