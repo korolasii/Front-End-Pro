@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+}
+
+.timer {
+    display: flex;
+    gap: 40px;
+    font-size: 0;
+}
+
+.digit {
+    position: relative;
+    width: 80px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+}
+
+.segment {
+    position: absolute;
+    background-color: #333;
+    transition: background-color 0.2s;
+}
+
+.segment.on {
+    background-color: #00ff00;
+}
+
+.segment.horizontal {
+    width: 70px;
+    height: 14px;
+}
+
+.segment.vertical {
+    width: 14px;
+    height: 60px; 
+}
+
+.segment.top { 
+    top: 0; 
+}
+
+.segment.middle { 
+    top: 50%; transform: translateY(-50%); 
+}
+
+.segment.bottom { 
+    bottom: 0; 
+}
+
+.segment.top-left { 
+    top: 10px; left: -20px; 
+} 
+
+.segment.bottom-left { 
+    bottom: 10px; left: -20px; 
+}
+
+.segment.top-right { 
+    top: 10px; right: -20px; 
+}
+
+.segment.bottom-right { 
+    bottom: 10px; right: -20px; 
+}
+
+.digit:nth-child(2) {
+    margin-left: 50px;
+}
+
+.digit:nth-child(4) {
+    margin-right: 50px;
+}
+
+.colon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 140px;  
+    width: 20px;    
+    font-size: 100px; 
+    color: #00ff00;
+}
