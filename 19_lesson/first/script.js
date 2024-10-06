@@ -24,6 +24,7 @@ async function addItemsFromFetch(url, containerAdd) {
         addItemToListResult(result['results']);
         containerAdd.innerHTML += newItems;
         updateUrlFetch(result.next);
+        addHidden()
     } catch (error) {
         console.error("Ошибка при загрузке данных:", error);
     }
@@ -53,7 +54,6 @@ async function showItemDetails(item, element) {
             if (Array.isArray(item[key])) {
                 details += `<p><strong>${key}:</strong></p><ul>`;
                 for (let subItem of item[key]) {
-                    console.log(subItem)
                     let name = await getName(subItem);
                     details += `<li>${name}</li>`;
                 }
@@ -92,6 +92,12 @@ async function getName(url) {
     }
 }
 
+function addHidden(){
+    if (urlFetch === null){
+        btnAdd.classList.add('hidden')
+    }
+}
+
 btnAdd.addEventListener('click', () => {
     if (urlFetch) {
         addItemsFromFetch(urlFetch, list);
@@ -99,14 +105,19 @@ btnAdd.addEventListener('click', () => {
 });
 
 nav.addEventListener('click', (e) => {
-    if (!e.target.classList.contains('active')) {
+    if (!e.target.classList.contains('active') && (e.target.innerHTML === 'People' || e.target.innerHTML === 'Planets' || e.target.innerHTML === 'Starships')) {
         deleteActive();
         listResult = [];
+        console.log()
         e.target.classList.add('active');
         list.innerHTML = '';
         let text = e.target.innerHTML;
         urlFetch = urlDefault[text];
         addItemsFromFetch(urlFetch, list);
+    }
+
+    if (btnAdd.classList['value'].split(' ')[1] === 'hidden'){
+        btnAdd.classList.remove('hidden')
     }
 });
 

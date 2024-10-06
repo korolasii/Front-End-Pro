@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Widget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-widget">
+        <div class="date-time">
+            <div id="current-date"></div>
+            <div id="sunrise"></div>
+        </div>
+
+        <div class="main-info">
+            <div class="time" id="current-time"></div>
+            <div class="temp-info">
+                <div class="temp" >Temperature <span id="temperature">C</span></div>
+                <div class="feels-like">Feels like <span id="feels-like">C</span></div>
+                <div class="weather-description" >Weather: <span id="weather-description"></span></div>
+            </div>
+        </div>
+
+        <div class="other-info">
+            <div>Humidity: <span id="humidity"></span></div>
+            <div>Pressure: <span id="pressure"></span></div>
+            <div>Wind: <span id="wind-speed"></span></div>
+        </div>
+
+        <div class="update-info">
+            <div id="last-update"></div>
+            <button id="refresh-btn">🔄</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
