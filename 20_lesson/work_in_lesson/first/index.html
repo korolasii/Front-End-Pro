@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <span  data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on bottom" >
+        <button type="button" class="btn btn-primary m-5  me-0" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+            Launch demo modal
+        </button>
+    </span>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, soluta explicabo! Rerum saepe debitis ab, quam, nemo illum explicabo eum obcaecati delectus quisquam asperiores pariatur perferendis sapiente cum, libero sequi?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="liveAlertPlaceholder"></div>
+    <button type="button" class="btn btn-primary m-5 mt-0" id="liveAlertBtn">Show live alert</button>
+    
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
