@@ -105,7 +105,7 @@ btnAdd.addEventListener('click', () => {
 });
 
 nav.addEventListener('click', (e) => {
-    if (!e.target.classList.contains('active') && (e.target.innerHTML === 'People' || e.target.innerHTML === 'Planets' || e.target.innerHTML === 'Starships')) {
+    if (!e.target.classList.contains('active') && Object.keys(urlDefault).includes(e.target.innerHTML)) {
         deleteActive();
         listResult = [];
         console.log()
