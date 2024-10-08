@@ -1,5 +1,9 @@
-let birthdate = moment('2008-07-08');
-console.log(birthdate.format('DD.MM.YYYY'));
+let birthdate = moment('2008-07-31');
+let conteiner = document.querySelector('#myBirthday');
+conteiner.innerHTML =[ `<div class="alert alert-success alert-dismissible" role="alert">`,
+        `   <div>${birthdate.format('DD.MM.YYYY')}</div>`,
+        '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+        '</div>'].join('')
 
 function checkAndFormatDate() {
     const dateInput = document.getElementById('birthdate').value;
@@ -26,7 +30,7 @@ const appendAlert = (message, type) => {
     alertPlaceholder.append(wrapper)
 }
 
-const alertTrigger = document.getElementById('inputGroup-sizing-default')
+const alertTrigger = document.getElementById('inputGroup-sizing-lg')
 alertTrigger.addEventListener('click', () => { 
     if(alertPlaceholder.childElementCount != 0){
         alertPlaceholder.innerHTML = ' ';

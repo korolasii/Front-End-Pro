@@ -7,12 +7,17 @@
     <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Введите дату рождения</h1>
-    <div class="input-group input-group-sm mb-3" style="width: 150px;">
-        <span class="input-group-text" id="inputGroup-sizing-default" style="cursor: pointer;" class="btn btn-primary">Send</span>
-        <input type="text" id="birthdate" class="form-control"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="DD.MM.YYYY">
-    </div>   
-    <div id="liveAlertPlaceholder"></div>
+    <div class="mx-auto my-5 d-flex justify-content-center flex-column align-items-center" style="width: 60%;">
+        <div id="myBirthday">
+
+        </div>
+        <h1>Введите дату рождения</h1>
+        <div class="input-group input-group-lg m-3" style="width: 250px;">
+            <span class="input-group-text" id="inputGroup-sizing-lg" style="cursor: pointer;" class="btn btn-primary">Send</span>
+            <input type="text" id="birthdate" class="form-control"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="DD.MM.YYYY">
+        </div>
+        <div id="liveAlertPlaceholder"></div>
+    </div>
 
     <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../../../node_modules/moment/moment.js"></script>
