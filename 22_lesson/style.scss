@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    background: black;
+}
+
+.page{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.preview{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        height: 450px;
+        width: 750px;
+    }
+}
+
+
+.hidden{
+    display: none;
+}
+
+.conteiner{
+    min-width: 900px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    font-size: 45px;
+    color: white;
+    background-color: black;
+}
+
+.navContent{
+    cursor: pointer;
+    padding: 20px 30px;
+    border: 2px solid #373737ba;
+    border-bottom: 0;
+    margin-left: 20px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.navContent:hover{
+    color: black;
+    background-color: rgb(224, 219, 219);
+    transition: ease-in 0.5s;
+}
+
+.active{
+    position: relative;
+    top: 10px; 
+    z-index: 1;
+    background-color: black;
+    transition: ease-in 0.5s;
+}
+
+
+.content{
+    border: 2px solid  #373737ba;
+    border-radius: 20px;
+    color: white;
+    padding: 20px 65px;
+    font-size: 25px;
+}
+
+li{
+    cursor: pointer;
+}
+
+.btnAdd{
+    cursor: pointer;
+    border: 1px solid #373737ba;
+    width: 150px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    transition: ease-in 0.2s;
+    user-select: none;
+}
+
+.btnAdd:active{
+    background-color: white;
+    color: black;
+}
+
+.details-window {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    
+    h3 {
+        margin-top: 0;
+    }
+}
+
+.details-window .close-window {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;
+
+    ul {
+        padding-left: 20px;
+    }
+}

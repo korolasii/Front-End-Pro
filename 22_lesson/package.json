@@ -1,0 +1,28 @@
+{
+  "name": "22_lesson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "install": "npm install",
+    "start": "npm run install && webpack --watch --progress"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "global": "^4.4.0",
+    "sass": "^1.80.2",
+    "save-dev": "^0.0.1-security",
+    "style-loader": "^4.0.0"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.0",
+    "sass-loader": "^16.0.2",
+    "terser-webpack-plugin": "^5.3.10",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
