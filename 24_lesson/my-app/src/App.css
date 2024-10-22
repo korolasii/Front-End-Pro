@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    background: black;
+}
+
+.page{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.preview{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview img{
+    height: 450px;
+    width: 750px;
+}
+
+.conteiner{
+    min-width: 900px;
+    width: 60%;
+    margin: 0 auto;
+}

@@ -1,0 +1,29 @@
+.nav{
+    display: flex;
+    font-size: 45px;
+    color: white;
+    background-color: black;
+}
+
+.navContent{
+    cursor: pointer;
+    padding: 20px 30px;
+    border: 2px solid #373737ba;
+    border-bottom: 0;
+    margin-left: 20px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.navContent:hover{
+    color: black;
+    background-color: rgb(224, 219, 219);
+    transition: ease-in 0.5s;
+}
+
+.active{
+    position: relative;
+    top: 10px; 
+    z-index: 1;
+    background-color: black;
+    transition: ease-in 0.5s;
+}

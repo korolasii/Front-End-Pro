@@ -1,0 +1,20 @@
+.btnAdd{
+    cursor: pointer;
+    border: 1px solid #373737ba;
+    width: 150px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    transition: ease-in 0.2s;
+    user-select: none;
+}
+
+.btnAdd:active{
+    background-color: white;
+    color: black;
+}
+
+
+.hidden{
+    display: none;
+}
