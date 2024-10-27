@@ -1,0 +1,10 @@
+.page{
+    margin: 0 auto;
+    text-align: center;
+    width: 20%;
+}
+
+.emojiContainer{
+    display: flex;
+    justify-content: space-between;
+}
