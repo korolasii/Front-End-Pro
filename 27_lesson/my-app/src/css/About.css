@@ -1,0 +1,11 @@
+.aboutContainer{
+    margin: 0 auto;
+    width: 40%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+ul{
+    text-align: left;
+}

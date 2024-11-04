@@ -1,0 +1,25 @@
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light a, body.light .themeButton{
+    color: black;
+}
+
+body.dark {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+body.dark a, body.dark .themeButton{
+    color: white;
+}
+
+.themeButton{
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #24af01;
+    border: 1px solid black;cursor: pointer;
+}

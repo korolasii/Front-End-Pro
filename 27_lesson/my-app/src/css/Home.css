@@ -1,0 +1,27 @@
+.homeContainer{
+    margin: 0 auto;
+    width: 40%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.inputTodo{
+    width: 150px;
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.ulTodo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btnDelete{
+    margin-left: 10px;
+    width: 70px;
+    border-radius: 5px;
+    cursor: pointer;
+}
