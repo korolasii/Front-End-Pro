@@ -46,7 +46,6 @@ export default function Home() {
                     </li>
                 ))}
             </ul>
-            {/* <button onClick={throwError}>Сгенерировать ошибку</button> */}
         </div>
     );
 }
