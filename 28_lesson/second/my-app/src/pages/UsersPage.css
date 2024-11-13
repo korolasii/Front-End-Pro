@@ -1,0 +1,45 @@
+.table{
+    background-color: white;
+    width: 30%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tableHeader{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.tableBody, .id, .firstName,.lastName, .ED{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tableBody{
+    width: 60%;
+}
+
+.id{
+    width: 20px;
+}
+
+.firstName,.lastName{
+    width: 80px;
+}
+
+.ED{
+    width: 115px;
+    flex-direction: row;
+}
+
+#buttonAdd, #buttonSave{
+    width: 100px;
+    margin-top: 20px;
+}

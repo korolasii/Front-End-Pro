@@ -1,0 +1,38 @@
+.error {
+  color: red;
+}
+
+.FormUpdate{
+  width: 10%;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.formField{
+  margin-bottom: 20px;
+}
+
+.buttonFormContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+input{
+  width: 150px;
+  height: 25px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.Exit{
+  text-align: center;
+  height: 25px;
+  width: 60px;
+}
