@@ -1,0 +1,12 @@
+.container {
+    margin-top: 20px;
+}
+
+.response {
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+}

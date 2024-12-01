@@ -1,0 +1,22 @@
+.footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}
+
+.year{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    color: #80808096;
+}
+.contacts{
+    margin-left: 30px;
+}
+
+.email, .telegram, .phone{
+    margin-bottom: 10px;
+}
+

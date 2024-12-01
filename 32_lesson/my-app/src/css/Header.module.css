@@ -1,0 +1,28 @@
+.header{
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding: 20px 0;
+}
+
+
+.menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.main, .Todo, .SWAPI{
+    cursor: pointer;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
