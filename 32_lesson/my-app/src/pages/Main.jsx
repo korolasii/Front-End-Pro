@@ -23,6 +23,9 @@ export default function Main() {
             title: 'Курсы',
             content: 'Hillel(Fron-End основы, Fron-End уровень 2, Python уровень 2, Java уровень 1, Java уровень 2, Linux, Front-end Pro), Робототехника'
         },
+    ];
+
+    const projects = [
         {
             title: 'A big renaming Odesa (python)',
             content: 'https://github.com/korolasii/ABigRenamingOdesa.git'
@@ -67,7 +70,7 @@ export default function Main() {
             title: 'Work with google sheets (Python)',
             content: 'https://github.com/korolasii/Work-with-Google-Sheets.git'
         },
-    ];
+    ]
 
 
     return (
@@ -75,23 +78,32 @@ export default function Main() {
             <Header />
             <div className={style.container}>
                 <div className={style.content}>
-                    <List
-                        grid={{ gutter: 16, column: 1 }}
-                        dataSource={data}
-                        renderItem={(item) => (
-                            <List.Item>
-                                {item.content.startsWith('http') ? (
-                                    <Card title={item.title}>
-                                        <a href={item.content}>Ссылка на проэкт</a>
-                                    </Card>
-                                ) : (
-                                    <Card title={item.title}>{item.content}</Card>
-                                )}
-                            </List.Item>
-                        )}
-                        className={style.list}
-                    />
-
+                    <div>
+                        <h2>Про меня</h2>
+                        <List
+                            grid={{ gutter: 16, column: 3 }}
+                            dataSource={data}
+                            renderItem={(item) => (
+                                <List.Item >
+                                    <Card title={item.title} className={style.card}>{item.content}</Card>
+                                </List.Item>
+                            )}
+                            className={style.list}
+                        />
+                    </div>
+                    <div>
+                        <h2>Проэкты</h2>
+                        <List
+                            grid={{ gutter: 16, column: 2 }}
+                            dataSource={projects}
+                            renderItem={(item) => (
+                                <List.Item >
+                                    <Card title={item.title} className={style.card}><a href={item.content}>{item.content}</a></Card>
+                                </List.Item>
+                            )}
+                            className={style.list}
+                        />
+                    </div>
                 </div>
             </div>
             <Footer />
