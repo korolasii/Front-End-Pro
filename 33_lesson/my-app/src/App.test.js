@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
@@ -69,31 +69,20 @@ describe('TODO App', () => {
         fireEvent.change(input, { target: { value: 'Нове завдання' } });
         fireEvent.click(button);
 
-        store.dispatch(addTodo({
-            id: '1',
-            title: 'Нове завдання'
-        }));
-
         const actions = store.getActions();
         const expectedPayload = [
             { type: 'todos/addTodo', payload: 'Нове завдання' },
-            { type: 'todos/addTodo', payload: { id: '1', title: 'Нове завдання' } } 
         ];
         expect(actions).toEqual(expectedPayload);
 
-        store = mockStore({
-            todos: {
-                items: [{ id: '1', title: 'Нове завдання' }],
-            },
-        });
+        
 
-        render(
-            <Provider store={store}>
-                <App />
-            </Provider>
-        );
-
-        const listItem = screen.getByText(/Нове завдання/i);
-        expect(listItem).toBeInTheDocument();
+        
+        // setTimeout(()=>{
+        //     expect(screen.getByText('Нове завдання'));
+        // })
+        await waitFor(() => {
+            expect(screen.getByText('Нове завдання')).toBeInTheDocument();
+        }, { timeout: 3000 });
     });
 });
